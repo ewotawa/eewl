@@ -24,18 +24,22 @@
           <p class="gallery__text">Click on an image to learn more about the design.</p>
           <ul class="gallery__list">
             <li class="gallery__item">
-              <img class="gallery__image" src="images/sun_and_reeds.jpg" alt="image of designer wearing a scarf featuring a motif including the sun, Egyptian lotus flowers, and reeds. Colors are orange and black.">
+              <img class="gallery__image" id = "gallery__image_item_sun-reeds" src="images/sun_and_reeds.jpg" onclick="openModal();currentSlide(1)" alt="image of designer wearing a scarf featuring a motif including the sun, Egyptian lotus flowers, and reeds. Colors are orange and black.">
             </li>
             <li class="gallery__item">
-              <img class="gallery__image" src="images/isis.jpg" alt="image of designer wearing a scarf featuring a motif of the Ancient Egyptian goddess Isis. Isis appears in a pose common on mummy coffins: kneeling, winged arms outstretched. Colors are orange and black.">
+              <img class="gallery__image" id = "gallery__image_item_isis" src="images/isis.jpg" onclick="openModal();currentSlide(1)" alt="image of designer wearing a scarf featuring a motif of the Ancient Egyptian goddess Isis. Isis appears in a pose common on mummy coffins: kneeling, winged arms outstretched. Colors are orange and black.">
             </li>
             <li class="gallery__item">
-              <img class="gallery__image" src="images/skulls.jpg" alt="image of designer wearing a scarf featuring skulls. Skulls alternate upright and upside-down along the length of the scarf. Colors are blue and a pink-yellow-orange variegated blend.">
+              <img class="gallery__image" id = "gallery__image_item_skulls" src="images/skulls.jpg" onclick="openModal();currentSlide(1)" alt="image of designer wearing a scarf featuring skulls. Skulls alternate upright and upside-down along the length of the scarf. Colors are blue and a pink-yellow-orange variegated blend.">
             </li>
             <li class="gallery__item">
-              <img class="gallery__image" src="images/lotus.jpg" alt="image of designer wearing a scarf featuring the Ancient Egyptian lotus flower. A lotus in full bloom is the finial on each end of the motif, alongside flower buds. Colors are orange and blue.">
+              <img class="gallery__image" id = "gallery__image_item_lotus" src="images/lotus.jpg" onclick="openModal();currentSlide(1)" alt="image of designer wearing a scarf featuring the Ancient Egyptian lotus flower. A lotus in full bloom is the finial on each end of the motif, alongside flower buds. Colors are orange and blue.">
             </li>
           </ul>
+        </section>
+
+        <section class="gallery__modal" id="gallery__modal">
+          <div class="gallery__modal-close" onclick="closeModal()">&times;</div>
         </section>
 
         <section class="contact">
