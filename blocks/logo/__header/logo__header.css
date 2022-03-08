@@ -1,0 +1,18 @@
+.logo__header {
+    color: white;
+    max-width: 550px;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+
+/* anything larger than 880px, use defaults */
+@media screen and (max-width: 880px) {
+  .logo__header {
+    width: 75%;
+  }
+}
+
+/* resolution more than 320px, fewer than 880px */
+
+/* resolution more than 320px, fewer than 880px */

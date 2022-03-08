@@ -1,0 +1,22 @@
+.header {
+  max-width: 880px;
+  margin: 0 auto;
+  /* flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+
+/* anything larger than 880px, use defaults */
+
+/* resolution more than 320px, fewer than 880px */
+
+/* resolution more than 320px, fewer than 880px */
+@media screen and (max-width: 880px) {
+  .header {
+    width: 100%;
+  }
+}

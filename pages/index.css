@@ -1,0 +1,18 @@
+@import url(../vendor/normalize.css);
+
+@import url('../fonts/cairo/cairo.css');
+@import url('../fonts/noto sans egyptian hieroglyphs/noto sans egyptian hieroglyphs.css');
+
+@import url('../blocks/about/__title/about__title.css');
+
+@import url('../blocks/body/body.css');
+
+@import url('../blocks/gallery/__title/gallery__title.css');
+
+@import url('../blocks/header/header.css');
+
+@import url('../blocks/logo/__header/logo__header.css');
+
+@import url('../blocks/main/main.css');
+
+@import url('../blocks/page/page.css');

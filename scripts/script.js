@@ -74,7 +74,7 @@ const imgLotus = [
 ]
 
 /* set original status of modal window */
-document.getElementById('gallery__modal').style.display = 'none';
+document.getElementById('modal').style.display = 'none';
 
 /* Open Modal Window and insert images from appropriate array. */
 
@@ -82,28 +82,28 @@ function populateDom(arr) {
   for (let i = 0; i < arr.length; i++) {
     /* outer slide container*/
     let container = document.createElement('div');
-    container.className = 'gallery__modal-slides';
+    container.className = 'modal__slides';
     /* slide number -- append to container*/
     let slideNum = document.createElement('div');
-    slideNum.className = 'gallery__modal-slide-count';
+    slideNum.className = 'modal__slide-count';
     let slideNumText = document.createTextNode((i + 1) + ' / ' + arr.length);
     slideNum.appendChild(slideNumText);
     container.appendChild(slideNum);
     /* slide image -- append to container*/
     let slideImg = document.createElement('img');
-    slideImg.className = 'gallery__modal-slide-img';
+    slideImg.className = 'modal__slide-img';
     slideImg.src = arr[i]['path'];
     slideImg.alt = arr[i]['caption'];
     container.appendChild(slideImg);
     /* append new container to parent element */
-    let parentDiv = document.getElementById('gallery__modal-content');
+    let parentDiv = document.getElementById('modal__content');
     parentDiv.appendChild(container);
   }
 }
 
 function openModal() {
   /* open the modal window */
-  document.getElementById('gallery__modal').style.display = 'block';
+  document.getElementById('modal').style.display = 'block';
   /* append a div element to the appropriate HTML element for the associated images based on image clicked */
   let imgID = event.target.id;
   if (imgID == 'gallery__image_item_sun-reeds') {
@@ -120,27 +120,27 @@ function openModal() {
   }
 
   /* append additional modal elements after images */
-  let parentDiv = document.getElementById('gallery__modal-content');
+  let parentDiv = document.getElementById('modal__content');
   /* prev slide */
   let slidePrev = document.createElement('a');
-  slidePrev.className = 'gallery__modal-img-prev';
+  slidePrev.className = 'modal__img-prev';
   slidePrev.onclick = 'plusSlides(-1)'
   let slidePrevText = document.createTextNode('\u{276E}');
   slidePrev.appendChild(slidePrevText);
   parentDiv.appendChild(slidePrev);
   /* next slide */
   let slideNext = document.createElement('a');
-  slideNext.className = 'gallery__modal-img-next';
+  slideNext.className = 'modal__img-next';
   slideNext.onclick = 'plusSlides(1)';
   let slideNextText = document.createTextNode('\u{276F}');
   slideNext.appendChild(slideNextText);
   parentDiv.appendChild(slideNext);
   /* caption */
   let captionContainer = document.createElement('div');
-  captionContainer.className = 'gallery__modal-caption-container';
+  captionContainer.className = 'modal__caption-container';
   let caption = document.createElement('p');
-  caption.className = 'gallery__modal-img-caption';
-  caption.id = 'gallery__modal-img-caption';
+  caption.className = 'modal__img-caption';
+  caption.id = 'modal-img-caption';
   captionContainer.appendChild(caption);
   parentDiv.appendChild(captionContainer);
 }
@@ -155,8 +155,8 @@ function removeAllChildNodes(parent) {
 }
 
 function closeModal() {
-  document.getElementById('gallery__modal').style.display = 'none';
+  document.getElementById('modal').style.display = 'none';
   /* remove child nodes */
-  let parentDiv = document.getElementById('gallery__modal-content');
+  let parentDiv = document.getElementById('modal__content');
   removeAllChildNodes(parentDiv);
 }
