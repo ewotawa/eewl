@@ -1,19 +1,24 @@
 .gallery {
-  max-width: 880px;
-  margin: 20px auto 0;
+  max-width: calc(900px + 16px + 16px + 16px + 16px);
+  margin: 100px auto 0;
 }
 
 
 /* ----- MEDIA QUERIES ----- */
 
 
-/* anything larger than 880px, use defaults */
+/* resolution more than 880px, fewer than 1024px */
+@media screen and (max-width: 1024px) {
+  .gallery {
+    max-width: calc(600px + 16px + 16px + 16px);
+  }
+}
 
 /* resolution more than 320px, fewer than 880px */
 
 /* resolution more than 320px, fewer than 880px */
-@media screen and (max-width: 880px) {
-  .header {
-    width: 90%;
+@media screen and (max-width: 640px) {
+  .gallery {
+    max-width: calc(300px + 16px + 16px);
   }
 }
