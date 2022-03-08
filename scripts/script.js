@@ -3,15 +3,18 @@
 const imgSunAndReeds = [
   {
     'path': 'images/sun_and_reeds.jpg',
-    'alt': 'alt description for image'
+    'alt': 'alt description for image',
+    'caption': 'caption for image'
   },
   {
     'path': 'images/sun_and_reeds.jpg',
-    'alt': 'alt description for image'
+    'alt': 'alt description for image',
+    'caption': 'caption for image'
   },
   {
     'path': 'images/sun_and_reeds.jpg',
-    'alt': 'alt description for image'
+    'alt': 'alt description for image',
+    'caption': 'caption for image'
   }
 ]
 
@@ -19,45 +22,54 @@ const imgSunAndReeds = [
 const imgIsis = [
   {
     'path': 'images/isis.jpg',
-    'alt': 'alt description for image'
+    'alt': 'alt description for image',
+    'caption': 'caption for image'
   },
   {
     'path': 'images/isis.jpg',
-    'alt': 'alt description for image'
+    'alt': 'alt description for image',
+    'caption': 'caption for image'
   },
   {
     'path': 'images/isis.jpg',
-    'alt': 'alt description for image'
+    'alt': 'alt description for image',
+    'caption': 'caption for image'
   }
 ]
 
 const imgSkulls = [
   {
     'path': 'images/skulls.jpg',
-    'alt': 'alt description for image'
+    'alt': 'alt description for image',
+    'caption': 'caption for image'
   },
   {
     'path': 'images/skulls.jpg',
-    'alt': 'alt description for image'
+    'alt': 'alt description for image',
+    'caption': 'caption for image'
   },
   {
     'path': 'images/skulls.jpg',
-    'alt': 'alt description for image'
+    'alt': 'alt description for image',
+    'caption': 'caption for image'
   }
 ]
 
 const imgLotus = [
   {
     'path': 'images/lotus.jpg',
-    'alt': 'alt description for image'
+    'alt': 'alt description for image',
+    'caption': 'caption for image'
   },
   {
     'path': 'images/lotus.jpg',
-    'alt': 'alt description for image'
+    'alt': 'alt description for image',
+    'caption': 'caption for image'
   },
   {
     'path': 'images/lotus.jpg',
-    'alt': 'alt description for image'
+    'alt': 'alt description for image',
+    'caption': 'caption for image'
   }
 ]
 
@@ -81,7 +93,7 @@ function populateDom(arr) {
     let slideImg = document.createElement('img');
     slideImg.className = 'gallery__modal-slide-img';
     slideImg.src = arr[i]['path'];
-    slideImg.alt = arr[i]['alt'];
+    slideImg.alt = arr[i]['caption'];
     container.appendChild(slideImg);
     /* append new container to parent element */
     let parentDiv = document.getElementById('gallery__modal-content');
