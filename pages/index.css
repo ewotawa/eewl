@@ -3,10 +3,14 @@
 @import url('../fonts/cairo/cairo.css');
 @import url('../fonts/noto sans egyptian hieroglyphs/noto sans egyptian hieroglyphs.css');
 
+@import url('../blocks/about/about.css');
 @import url('../blocks/about/__title/about__title.css');
 
 @import url('../blocks/body/body.css');
 
+@import url('../blocks/contact/contact.css');
+
+@import url('../blocks/gallery/gallery.css');
 @import url('../blocks/gallery/__title/gallery__title.css');
 
 @import url('../blocks/header/header.css');
