@@ -7,13 +7,13 @@
 /* ----- MEDIA QUERIES ----- */
 
 
-/* anything larger than 880px, use defaults */
-
-/* resolution more than 320px, fewer than 880px */
-
-/* resolution more than 320px, fewer than 880px */
-@media screen and (max-width: 880px) {
+/* anything larger than 1024, use defaults */
+@media screen and (max-width: 1024px) {
   .about {
-    width: 90%;
+    width: 80%;
   }
 }
+
+/* resolution more than 320px, fewer than 880px */
+
+/* resolution more than 320px, fewer than 880px */
