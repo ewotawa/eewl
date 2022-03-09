@@ -4,17 +4,14 @@ const imgSunAndReeds = [
   {
     'path': 'images/sun_and_reeds.jpg',
     'alt': 'alt description for image',
-    'caption': 'caption for image'
   },
   {
     'path': 'images/sun_and_reeds.jpg',
     'alt': 'alt description for image',
-    'caption': 'caption for image'
   },
   {
     'path': 'images/sun_and_reeds.jpg',
     'alt': 'alt description for image',
-    'caption': 'caption for image'
   }
 ]
 
@@ -23,17 +20,14 @@ const imgIsis = [
   {
     'path': 'images/isis.jpg',
     'alt': 'alt description for image',
-    'caption': 'caption for image'
   },
   {
     'path': 'images/isis.jpg',
     'alt': 'alt description for image',
-    'caption': 'caption for image'
   },
   {
     'path': 'images/isis.jpg',
     'alt': 'alt description for image',
-    'caption': 'caption for image'
   }
 ]
 
@@ -41,17 +35,14 @@ const imgSkulls = [
   {
     'path': 'images/skulls.jpg',
     'alt': 'alt description for image',
-    'caption': 'caption for image'
   },
   {
     'path': 'images/skulls.jpg',
     'alt': 'alt description for image',
-    'caption': 'caption for image'
   },
   {
     'path': 'images/skulls.jpg',
     'alt': 'alt description for image',
-    'caption': 'caption for image'
   }
 ]
 
@@ -59,17 +50,14 @@ const imgLotus = [
   {
     'path': 'images/lotus.jpg',
     'alt': 'alt description for image',
-    'caption': 'caption for image'
   },
   {
     'path': 'images/lotus.jpg',
     'alt': 'alt description for image',
-    'caption': 'caption for image'
   },
   {
     'path': 'images/lotus.jpg',
     'alt': 'alt description for image',
-    'caption': 'caption for image'
   }
 ]
 
@@ -93,13 +81,32 @@ function populateDom(arr) {
     let slideImg = document.createElement('img');
     slideImg.className = 'modal__slide-img';
     slideImg.src = arr[i]['path'];
-    slideImg.alt = arr[i]['caption'];
+    slideImg.alt = arr[i]['alt'];
     container.appendChild(slideImg);
     /* append new container to parent element */
     let parentDiv = document.getElementById('modal__content');
     parentDiv.appendChild(container);
   }
 }
+
+function populateThumbnail(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    /* outer thumbnail container*/
+    let li = document.createElement('li');
+    li.className = 'modal__demo-item';
+    /* slide image -- append to container*/
+    let img = document.createElement('img');
+    img.className = 'modal__demo';
+    img.src = arr[i]['path'];
+    img.alt = arr[i]['alt'];
+    img.setAttribute('onclick', 'currentSlide(' + (i + 1) + ')');
+    li.appendChild(img);
+    /* append new container to parent element */
+    let ul = document.getElementById('modal__demo-container');
+    ul.appendChild(li);
+  }
+}
+
 
 function openModal() {
   /* open the modal window */
@@ -123,15 +130,15 @@ function openModal() {
   let parentDiv = document.getElementById('modal__content');
   /* prev slide */
   let slidePrev = document.createElement('a');
-  slidePrev.className = 'modal__img-prev';
-  slidePrev.onclick = 'plusSlides(-1)'
+  slidePrev.className = 'modal__button modal__button_prev';
+  slidePrev.setAttribute('onclick', 'plusSlides(-1)');
   let slidePrevText = document.createTextNode('\u{276E}');
   slidePrev.appendChild(slidePrevText);
   parentDiv.appendChild(slidePrev);
   /* next slide */
   let slideNext = document.createElement('a');
-  slideNext.className = 'modal__img-next';
-  slideNext.onclick = 'plusSlides(1)';
+  slideNext.className = 'modal__button modal__button_next';
+  slideNext.setAttribute('onclick', 'plusSlides(1)');
   let slideNextText = document.createTextNode('\u{276F}');
   slideNext.appendChild(slideNextText);
   parentDiv.appendChild(slideNext);
@@ -143,6 +150,26 @@ function openModal() {
   caption.id = 'modal-img-caption';
   captionContainer.appendChild(caption);
   parentDiv.appendChild(captionContainer);
+
+  /* append thumbnail images below elements */
+  let ul = document.createElement('ul');
+  ul.className = 'modal__demo-container';
+  ul.id = 'modal__demo-container';
+  parentDiv.appendChild(ul);
+
+  if (imgID == 'gallery__image_item_sun-reeds') {
+    populateThumbnail(imgSunAndReeds);
+  } else if (imgID == 'gallery__image_item_isis') {
+    populateThumbnail(imgIsis);
+  } else if (imgID == 'gallery__image_item_skulls') {
+    populateThumbnail(imgSkulls);
+  } else if (imgID == 'gallery__image_item_lotus') {
+    populateThumbnail(imgLotus);
+  } else {
+    /* if there's nothing to open, close the modal window. */
+    closeModal();
+  }
+
 }
 
 /* Close Modal Window */
@@ -159,4 +186,36 @@ function closeModal() {
   /* remove child nodes */
   let parentDiv = document.getElementById('modal__content');
   removeAllChildNodes(parentDiv);
+}
+
+/* populate slides in the modal */
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName('modal__slides');
+  let dots = document.getElementsByClassName('modal__demo');
+  let captionText = document.getElementById('modal-img-caption');
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+  }
+  for (i = 0; i < dots.length; i++) {
+    /* remove active modifier from class list*/
+    dots[i].className = dots[i].className.replace('modal__demo_active', '');
+  }
+  slides[slideIndex - 1].style.display = 'block';
+  dots[slideIndex - 1].className += ' modal__demo_active';
+  captionText.innerHTML = dots[slideIndex - 1].alt;
 }

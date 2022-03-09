@@ -13,7 +13,7 @@
 
 /* resolution more than 320px, fewer than 880px */
 @media screen and (max-width: 880px) {
-  .header {
+  .about {
     width: 90%;
   }
 }

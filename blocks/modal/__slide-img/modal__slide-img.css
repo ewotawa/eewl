@@ -1,0 +1,20 @@
+.modal__slide-img {
+  max-width: calc(150px * 3);
+  max-height: calc(150px * 3);
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+
+/* anything larger than 880px, use defaults */
+
+/* resolution more than 880px, fewer than 1024px */
+
+/* resolution more than 320px, fewer than 880px */
+@media screen and (max-width: 640px) {
+  .modal__slide-img {
+    max-width: calc(100px * 3);
+    max-height: calc(100px * 3);
+  }
+}
+/* resolution more than 320px, fewer than 880px */
