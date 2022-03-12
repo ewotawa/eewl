@@ -1,0 +1,8 @@
+.gallery__overlay-container {
+  display: grid;
+  overflow: hidden;
+  max-height: 300px;
+  /* grid styling */
+  grid-template: 'container' 1fr;
+  place-items: center;
+}
