@@ -9,6 +9,13 @@
 @import url('../blocks/body/body.css');
 
 @import url('../blocks/contact/contact.css');
+@import url('../blocks/contact/__container/contact__container.css');
+@import url('../blocks/contact/__form/contact__form.css');
+@import url('../blocks/contact/__input/contact__input.css');
+@import url('../blocks/contact/__input/_field/contact__input_field_msg-body.css');
+@import url('../blocks/contact/__input/_field/contact__input_field_subject.css');
+@import url('../blocks/contact/__submit/contact__submit.css');
+@import url('../blocks/contact/__title/contact__title.css');
 
 @import url('../blocks/gallery/gallery.css');
 @import url('../blocks/gallery/__image/gallery__image.css');
