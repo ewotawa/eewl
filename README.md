@@ -6,3 +6,4 @@
 * [Lightbox (Modal Image Gallery) TryIt Editor](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_lightbox)
 * [Remove All Child Nodes](https://www.javascripttutorial.net/dom/manipulating/remove-all-child-nodes/)
 * [Fontawesome](https://fontawesome.com/)
+* [Positioning Overlay Content with CSS Grid](https://css-tricks.com/positioning-overlay-content-with-css-grid/)
