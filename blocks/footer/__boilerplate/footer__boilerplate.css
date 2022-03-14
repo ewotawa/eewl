@@ -1,0 +1,4 @@
+.footer__boilerplate {
+  display: flex;
+  flex-direction: column;
+}

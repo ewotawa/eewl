@@ -1,0 +1,21 @@
+.footer__links {
+  list-style: none;
+  padding: 0 40px 0 0;
+  min-width: 150px;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+
+/* anything larger than 880px, use defaults */
+
+/* resolution more than 880px, fewer than 1024px */
+@media screen and (max-width: 880px) {
+  .footer__links {
+    padding: 0;
+  }
+}
+
+/* resolution more than 320px, fewer than 880px */
+
+/* resolution more than 320px, fewer than 880px */

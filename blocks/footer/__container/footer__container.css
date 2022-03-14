@@ -1,0 +1,27 @@
+.footer__container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  text-align: left;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+
+/* anything larger than 880px, use defaults */
+
+/* resolution more than 880px, fewer than 1024px */
+@media screen and (max-width: 880px) {
+  .footer__container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* resolution more than 320px, fewer than 880px */
+
+/* resolution more than 320px, fewer than 880px */
