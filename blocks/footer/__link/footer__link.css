@@ -2,3 +2,7 @@
   line-height: 2;
   padding: 6px 0;
 }
+
+.footer__link: hover {
+  cursor: pointer;
+}

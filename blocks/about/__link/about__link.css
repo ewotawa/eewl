@@ -1,0 +1,10 @@
+.about__link {
+  font-variant: small-caps;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.about__link:hover {
+  color: hsl(0, 0%, 85%);
+}

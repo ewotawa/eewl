@@ -6,3 +6,7 @@
   color: white;
   border-radius: 30px;
 }
+
+.contact__submit:hover {
+  cursor: pointer;
+}

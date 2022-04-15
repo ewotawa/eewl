@@ -7,3 +7,7 @@
   grid-template: 'container' 1fr;
   place-items: center;
 }
+
+.gallery__overlay-container {
+  cursor: pointer;
+}
