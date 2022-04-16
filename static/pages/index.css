@@ -12,6 +12,7 @@
 @import url('../blocks/body/body.css');
 
 @import url('../blocks/contact/contact.css');
+@import url('../blocks/contact/__confirm/contact__confirm.css');
 @import url('../blocks/contact/__container/contact__container.css');
 @import url('../blocks/contact/__form/contact__form.css');
 @import url('../blocks/contact/__input/contact__input.css');
