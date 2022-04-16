@@ -7,17 +7,14 @@
           <h2 class="contact__title">Contact</h2>
           <div class="contact__container">
             <form method="POST" class="contact__form" id="contact__form" name="edit-profile">
-              <input class="contact__input contact__input_field_name" type="text" name="name" id="name" placeholder="Name" required>
-              <input class="contact__input contact__input_field_email" type="email" name="email" id="email" placeholder="email@example.com" required>
-              <input class="contact__input contact__input_field_subject" type="text" name="subject" id="subject" placeholder="Subject" required>
+              {{ form.hidden_tag() }}
+              {{ form.name(class="contact__input contact__input_field_name", placeholder="Name")}}
+              {{ form.email(class="contact__input contact__input_field_email", placeholder="email@example.com")}}
+              {{ form.subject(class="contact__input contact__input_field_subject", placeholder="Subject")}}
               <label class="contact__input_field_msg-type-label" for="msg-type">Message Type:</label>
-              <select class="contact__input contact__input_field_msg-type" name="msg-type" id="msg-type" required>
-                <option value="commission">Commission a custom piece</option>
-                <option value="question">Ask a Question</option>
-                <option value="other">Other</option>
-              <select>
-              <textarea class="contact__input contact__input_field_msg-body" name="msg-body" id="msg-body" required>Enter your message here.</textarea>
-              <button class="contact__submit" type="submit" form="contact__form" value="Send">Send</button>
+              {{ form.msg_type(class="contact__input contact__input_field_msg-type")}}
+              {{ form.msg_body(class="contact__input contact__input_field_msg-body", placeholder="Enter your message here.")}}
+              {{ form.submit(class="contact__submit")}}
             </form>
           </div>
         </section>
