@@ -18,6 +18,39 @@ class ContactForm(FlaskForm):
     msg_body = TextAreaField(validators=[DataRequired()])
     submit = SubmitField()
 
+# database environment
+ENV = 'dev'
+
+if ENV == 'dev':
+    # dev database
+    app.debug = True
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:postgres@localhost/eewl'
+else:
+    # prod database
+    app.debug = False
+    app.config['SQLALCHEMY_DATABASE_URI'] = ''
+
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+# create a database object
+db = SQLAlchemy(app)
+
+class ContactDB(db.Model):
+    __tablename__ = 'contact'
+    id = db.Column(db.Integer, primary_key = True)
+    name = db.Column(db.String(200))
+    email = db.Column(db.String(200))
+    subject = db.Column(db.Text())
+    msg_type = db.Column(db.String(50))
+    msg_body = db.Column(db.Text())
+
+    def __init__(self, name, email, subject, msg_type, msg_body):
+        self.name = name
+        self.email = email
+        self.subject = subject
+        self.msg_type = msg_type
+        self.msg_body = msg_body
+
 @app.route('/', methods = ['GET', 'POST'])
 def index():
     form = ContactForm()
@@ -35,4 +68,4 @@ def submit():
         return render_template('confirmsubmit.html')
 
 if __name__ == '__main__':
-    app.run(debug = True)
+    app.run()
