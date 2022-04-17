@@ -1,0 +1,22 @@
+{# INDEX #}
+{% extends "base.html" %}
+
+{% block content %}
+
+        <section class="contact">
+          <h2 class="contact__title">Contact</h2>
+          <div class="contact__container">
+            <form action="/submit" method="POST" class="contact__form" id="contact__form" name="edit-profile">
+              {{ form.hidden_tag() }}
+              {{ form.name(class="contact__input contact__input_field_name", placeholder="Name")}}
+              {{ form.email(class="contact__input contact__input_field_email", placeholder="email@example.com")}}
+              {{ form.subject(class="contact__input contact__input_field_subject", placeholder="Subject")}}
+              <label class="contact__input_field_msg-type-label" for="msg-type">Message Type:</label>
+              {{ form.msg_type(class="contact__input contact__input_field_msg-type")}}
+              {{ form.msg_body(class="contact__input contact__input_field_msg-body", placeholder="Enter your message here.")}}
+              {{ form.submit(class="contact__submit")}}
+            </form>
+          </div>
+        </section>
+
+{% endblock %}
