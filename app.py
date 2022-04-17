@@ -59,12 +59,18 @@ def index():
 @app.route('/submit', methods=['POST'])
 def submit():
     if request.method == 'POST':
+        # collect the form information.
         name = request.form['name']
         email = request.form['email']
         subject = request.form['subject']
         msg_type = request.form['msg_type']
         msg_body = request.form['msg_body']
+        # debug: print to the console to make sure that the form POST is working.
         # print(name, email, subject, msg_type, msg_body)
+        # add the data to the database
+        data = ContactDB(name, email, subject, msg_type, msg_body)
+        db.session.add(data)
+        db.session.commit()
         return render_template('confirmsubmit.html')
 
 if __name__ == '__main__':
