@@ -6,7 +6,7 @@
         <section class="contact">
           <h2 class="contact__title">Contact</h2>
           <div class="contact__container">
-            <form method="POST" class="contact__form" id="contact__form" name="edit-profile">
+            <form action="/submit" method="POST" class="contact__form" id="contact__form" name="edit-profile">
               {{ form.hidden_tag() }}
               {{ form.name(class="contact__input contact__input_field_name", placeholder="Name")}}
               {{ form.email(class="contact__input contact__input_field_email", placeholder="email@example.com")}}

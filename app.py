@@ -1,7 +1,8 @@
-from flask import Flask, render_template, session, redirect, url_for
+from flask import Flask, render_template, session, redirect, url_for, request
 from flask_wtf import FlaskForm
 from wtforms import StringField, SelectField, TextField, TextAreaField, SubmitField
 from wtforms.validators import DataRequired, Email
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
@@ -19,26 +20,19 @@ class ContactForm(FlaskForm):
 
 @app.route('/', methods = ['GET', 'POST'])
 def index():
-
-    name = False
-
     form = ContactForm()
-
-    if form.validate_on_submit():
-        # collect the info ...
-        session['name'] = form.name.data
-        session['email'] = form.email.data
-        session['subject'] = form.subject.data
-        session['msg_type'] = form.msg_type.data
-        session['msg_body'] = form.msg_body.data
-
-        return redirect(url_for('confirmsubmit'))
-
     return render_template('index.html', form = form)
 
-@app.route('/confirmsubmit')
-def confirmsubmit():
-    return render_template('confirmsubmit.html')
+@app.route('/submit', methods=['POST'])
+def submit():
+    if request.method == 'POST':
+        name = request.form['name']
+        email = request.form['email']
+        subject = request.form['subject']
+        msg_type = request.form['msg_type']
+        msg_body = request.form['msg_body']
+        # print(name, email, subject, msg_type, msg_body)
+        return render_template('confirmsubmit.html')
 
 if __name__ == '__main__':
     app.run(debug = True)
