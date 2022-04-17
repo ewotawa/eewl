@@ -1,6 +1,7 @@
 ### APP.PY ###
 
 # Imports from libraries
+import os
 from flask import Flask, render_template, session, redirect, url_for, request
 from flask_sqlalchemy import SQLAlchemy
 from send_mail import send_mail
@@ -9,8 +10,7 @@ from forms import ContactForm
 
 app = Flask(__name__)
 
-# update later to make more secure.
-app.config['SECRET_KEY'] = 'secretkey'
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 
 # database environment
 ENV = 'dev'
