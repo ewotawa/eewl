@@ -2,15 +2,15 @@
 
 const imgSunAndReeds = [
   {
-    'path': 'images/sun_and_reeds.jpg',
+    'path': '../static/images/sun_and_reeds.jpg',
     'alt': 'alt description for image',
   },
   {
-    'path': 'images/sun_and_reeds.jpg',
+    'path': '../static/images/sun_and_reeds.jpg',
     'alt': 'alt description for image',
   },
   {
-    'path': 'images/sun_and_reeds.jpg',
+    'path': '../static/images/sun_and_reeds.jpg',
     'alt': 'alt description for image',
   }
 ]
@@ -18,45 +18,45 @@ const imgSunAndReeds = [
 
 const imgIsis = [
   {
-    'path': 'images/isis.jpg',
+    'path': '../static/images/isis.jpg',
     'alt': 'alt description for image',
   },
   {
-    'path': 'images/isis.jpg',
+    'path': '../static/images/isis.jpg',
     'alt': 'alt description for image',
   },
   {
-    'path': 'images/isis.jpg',
+    'path': '../static/images/isis.jpg',
     'alt': 'alt description for image',
   }
 ]
 
 const imgSkulls = [
   {
-    'path': 'images/skulls.jpg',
+    'path': '../static/images/skulls.jpg',
     'alt': 'alt description for image',
   },
   {
-    'path': 'images/skulls.jpg',
+    'path': '../static/images/skulls.jpg',
     'alt': 'alt description for image',
   },
   {
-    'path': 'images/skulls.jpg',
+    'path': '../static/images/skulls.jpg',
     'alt': 'alt description for image',
   }
 ]
 
 const imgLotus = [
   {
-    'path': 'images/lotus.jpg',
+    'path': '../static/images/lotus.jpg',
     'alt': 'alt description for image',
   },
   {
-    'path': 'images/lotus.jpg',
+    'path': '../static/images/lotus.jpg',
     'alt': 'alt description for image',
   },
   {
-    'path': 'images/lotus.jpg',
+    'path': '../static/images/lotus.jpg',
     'alt': 'alt description for image',
   }
 ]
