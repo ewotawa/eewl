@@ -1,22 +1,16 @@
+### APP.PY ###
+
+# Imports from libraries
 from flask import Flask, render_template, session, redirect, url_for, request
-from flask_wtf import FlaskForm
-from wtforms import StringField, SelectField, TextField, TextAreaField, SubmitField
-from wtforms.validators import DataRequired, Email
 from flask_sqlalchemy import SQLAlchemy
+from send_mail import send_mail
+# Imports from forms.py
+from forms import ContactForm
 
 app = Flask(__name__)
 
 # update later to make more secure.
 app.config['SECRET_KEY'] = 'secretkey'
-
-# later move to a separate py file.
-class ContactForm(FlaskForm):
-    name = StringField(validators=[DataRequired()])
-    email = StringField(validators=[Email(), DataRequired()])
-    subject = StringField(validators=[DataRequired()])
-    msg_type = SelectField(choices = [('commission', 'Commission a custom piece'), ('question', 'Ask a Question'), ('other', 'Other')])
-    msg_body = TextAreaField(validators=[DataRequired()])
-    submit = SubmitField()
 
 # database environment
 ENV = 'dev'
@@ -71,6 +65,8 @@ def submit():
         data = ContactDB(name, email, subject, msg_type, msg_body)
         db.session.add(data)
         db.session.commit()
+        # send e-mail
+        send_mail(name, email, subject, msg_type, msg_body)
         return render_template('confirmsubmit.html')
 
 if __name__ == '__main__':
