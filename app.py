@@ -14,17 +14,21 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 
 # database environment
-ENV = 'prod'
+ENV = 'dev'
 
 if ENV == 'dev':
     # dev database
     app.debug = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:postgres@localhost/eewl'
+    # uri needs to start with postgresql even though heroku gives a postgres string.
+    uri = str(os.getenv("SQLALCHEMY_DATABASE_URI_DEV"))
+    if uri.startswith('postgres://'):
+        uri = uri.replace('postgres://', 'postgresql://', 1)
+    app.config['SQLALCHEMY_DATABASE_URI'] = str(uri)
 else:
     # prod database
     app.debug = False
     # uri needs to start with postgresql even though heroku gives a postgres string.
-    uri = os.getenv('SQLALCHEMY_DATABASE_URI')
+    uri = os.getenv("SQLALCHEMY_DATABASE_URI_PROD")
     if uri.startswith('postgres://'):
         uri = uri.replace('postgres://', 'postgresql://', 1)
     app.config['SQLALCHEMY_DATABASE_URI'] = uri
