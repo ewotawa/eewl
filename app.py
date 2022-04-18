@@ -35,11 +35,11 @@ ENV = 'dev'
 if ENV == 'dev':
     # dev database
     app.debug = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = uri_dev
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:postgres@localhost/eewl'
 else:
     # prod database
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = uri_prod
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://awxxwahntwnhyj:9f6f97f0fc4fbd4b2b5893a45ca18aaebf6b0c743b6cb5189ac12c0d3c1ba8b7@ec2-52-54-212-232.compute-1.amazonaws.com:5432/deb0ppd9j8oab1'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
