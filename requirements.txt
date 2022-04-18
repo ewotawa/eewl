@@ -1,19 +1,19 @@
 certifi==2021.10.8
 click==8.0.4
 dnspython==1.16.0
-email-validator @ file:///home/conda/feedstock_root/build_artifacts/email-validator-meta_1623593316902/work
-Flask @ file:///opt/conda/conda-bld/flask_1648041541647/work
+email-validator==1.1.3
+Flask==2.0.3
 Flask-SQLAlchemy==2.5.1
 Flask-WTF==0.14.3
 greenlet==1.1.2
-gunicorn @ file:///tmp/build/80754af9/gunicorn_1617118195166/work
-idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1642433548627/work
-itsdangerous @ file:///tmp/build/80754af9/itsdangerous_1621432558163/work
-Jinja2 @ file:///opt/conda/conda-bld/jinja2_1647436528585/work
-MarkupSafe @ file:///tmp/build/80754af9/markupsafe_1621523467000/work
+gunicorn==20.1.0
+idna==3.3
+itsdangerous==2.0.1
+Jinja2==3.0.3
+MarkupSafe==2.0.1
 psycopg2==2.8.6
 pymongo==3.12.0
 python-dotenv==0.20.0
 SQLAlchemy==1.4.35
-Werkzeug @ file:///opt/conda/conda-bld/werkzeug_1645628268370/work
-WTForms @ file:///tmp/build/80754af9/wtforms_1597707484216/work
+Werkzeug==2.0.3
+WTForms==2.3.3
