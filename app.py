@@ -13,25 +13,33 @@ app = Flask(__name__)
 
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 
-# database environment
+################################
+##### DATABASE ENVIRONMENT #####
+################################
+
+# call the variables for the database URIs. (For whatever reason not working if inside the if statement).
+uri_dev = str(os.getenv("SQLALCHEMY_DATABASE_URI_DEV"))
+if uri_dev.startswith('postgres://'):
+    uri_dev = uri_dev.replace('postgres://', 'postgresql://', 1)
+uri_dev = str(uri_dev)
+# print(uri_dev)
+
+uri_prod = str(os.getenv("SQLALCHEMY_DATABASE_URI_PROD"))
+if uri_prod.startswith('postgres://'):
+    uri_prod = uri_prod.replace('postgres://', 'postgresql://', 1)
+uri_prod = str(uri_prod)
+# print(uri_prod)
+
 ENV = 'dev'
 
 if ENV == 'dev':
     # dev database
     app.debug = True
-    # uri needs to start with postgresql even though heroku gives a postgres string.
-    uri = str(os.getenv("SQLALCHEMY_DATABASE_URI_DEV"))
-    if uri.startswith('postgres://'):
-        uri = uri.replace('postgres://', 'postgresql://', 1)
-    app.config['SQLALCHEMY_DATABASE_URI'] = str(uri)
+    app.config['SQLALCHEMY_DATABASE_URI'] = uri_dev
 else:
     # prod database
     app.debug = False
-    # uri needs to start with postgresql even though heroku gives a postgres string.
-    uri = str(os.getenv("SQLALCHEMY_DATABASE_URI_PROD"))
-    if uri.startswith('postgres://'):
-        uri = uri.replace('postgres://', 'postgresql://', 1)
-    app.config['SQLALCHEMY_DATABASE_URI'] = str(uri)
+    app.config['SQLALCHEMY_DATABASE_URI'] = uri_prod
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
@@ -53,6 +61,10 @@ class ContactDB(db.Model):
         self.subject = subject
         self.msg_type = msg_type
         self.msg_body = msg_body
+
+############################
+##### ROUTES FOR PAGES #####
+############################
 
 @app.route('/', methods = ['GET', 'POST'])
 def index():
