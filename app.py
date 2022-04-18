@@ -28,10 +28,10 @@ else:
     # prod database
     app.debug = False
     # uri needs to start with postgresql even though heroku gives a postgres string.
-    uri = os.getenv("SQLALCHEMY_DATABASE_URI_PROD")
+    uri = str(os.getenv("SQLALCHEMY_DATABASE_URI_PROD"))
     if uri.startswith('postgres://'):
         uri = uri.replace('postgres://', 'postgresql://', 1)
-    app.config['SQLALCHEMY_DATABASE_URI'] = uri
+    app.config['SQLALCHEMY_DATABASE_URI'] = str(uri)
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
