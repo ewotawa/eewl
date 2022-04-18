@@ -20,13 +20,21 @@ app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 ENV = 'prod'
 
 if ENV == 'dev':
-    # dev database
     app.debug = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:postgres@localhost/eewl'
+    # dev database
+    uri = str(os.getenv("DATABASE_URL_DEV"))  # or other relevant config var
+    if uri.startswith("postgres://"):
+        uri = uri.replace("postgres://", "postgresql://", 1)
+    # rest of connection code using the connection string `uri`
+    app.config['SQLALCHEMY_DATABASE_URI'] = uri
 else:
-    # prod database
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://awxxwahntwnhyj:9f6f97f0fc4fbd4b2b5893a45ca18aaebf6b0c743b6cb5189ac12c0d3c1ba8b7@ec2-52-54-212-232.compute-1.amazonaws.com:5432/deb0ppd9j8oab1"
+    # prod database
+    uri = str(os.getenv("DATABASE_URL"))  # or other relevant config var
+    if uri.startswith("postgres://"):
+        uri = uri.replace("postgres://", "postgresql://", 1)
+    # rest of connection code using the connection string `uri`
+    app.config['SQLALCHEMY_DATABASE_URI'] = uri
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
