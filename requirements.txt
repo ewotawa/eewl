@@ -1,5 +1,5 @@
 certifi==2021.10.8
-click @ file:///tmp/build/80754af9/click_1646056590078/work
+click==8.0.4
 dnspython==1.16.0
 email-validator @ file:///home/conda/feedstock_root/build_artifacts/email-validator-meta_1623593316902/work
 Flask @ file:///opt/conda/conda-bld/flask_1648041541647/work
