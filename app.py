@@ -17,20 +17,7 @@ app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 ##### DATABASE ENVIRONMENT #####
 ################################
 
-# call the variables for the database URIs. (For whatever reason not working if inside the if statement).
-uri_dev = str(os.getenv("SQLALCHEMY_DATABASE_URI_DEV"))
-if uri_dev.startswith('postgres://'):
-    uri_dev = uri_dev.replace('postgres://', 'postgresql://', 1)
-uri_dev = str(uri_dev)
-# print(uri_dev)
-
-uri_prod = str(os.getenv("SQLALCHEMY_DATABASE_URI_PROD"))
-if uri_prod.startswith('postgres://'):
-    uri_prod = uri_prod.replace('postgres://', 'postgresql://', 1)
-uri_prod = str(uri_prod)
-# print(uri_prod)
-
-ENV = 'dev'
+ENV = 'prod'
 
 if ENV == 'dev':
     # dev database
