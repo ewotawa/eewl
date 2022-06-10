@@ -4,6 +4,7 @@
   margin: auto;
   padding: 0;
   max-width: calc(150px * 3);
+  min-height: 100vh; /* this is the magic, actually bug abusing iOS here -- see modal.css*/
 }
 
 /* ----- MEDIA QUERIES ----- */
