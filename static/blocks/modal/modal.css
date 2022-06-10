@@ -1,6 +1,6 @@
 .modal {
   display: none;
-  position: relative; /* change to relative because iOS couldn't handle fixed */
+  position: fixed; 
   z-index: 1;
   padding-top: 100px;
   left: 0;
