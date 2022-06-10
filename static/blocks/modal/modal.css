@@ -1,6 +1,6 @@
 .modal {
   display: none;
-  position: fixed;
+  position: relative; /* change to relative because iOS couldn't handle fixed */
   z-index: 1;
   padding-top: 100px;
   left: 0;
@@ -10,8 +10,6 @@
   overflow: auto;
   background-color: black;
   /* z-index workaround for iOS */
-  -webkit-transform: translateZ(1px);
-  /* z-index workaround for iOS, part 2 */
-  -webkit-transform: translate3d(0,0,1px);
-  transform: translate3d(0,0,1px);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }

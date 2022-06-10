@@ -10,3 +10,4 @@
 * [Build & Deploy A Python Web App | Flask, Postgres & Heroku](https://www.youtube.com/watch?v=w25ea_I89iM&t=1091s)
 * [Python and Flask Bootcamp: Create Websites using Flask!](https://www.udemy.com/share/1013nI3@YxzaaUMmp6S2klnRgxYzJO_FZBC60Zdp0hC0HNjMTR9nQwMFZYQBkUCBO_nxXqSu/)
 * [Why is SQLAlchemy 1.4.x not connecting to Heroku Postgres?](https://help.heroku.com/ZKNTJQSK/why-is-sqlalchemy-1-4-x-not-connecting-to-heroku-postgres)
+* [Z-index issue on iOS Safari & Chrome](https://stackoverflow.com/questions/18255511/z-index-issue-on-ios-safari-chrome)
