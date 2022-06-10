@@ -9,4 +9,6 @@
   height: 100%;
   overflow: auto;
   background-color: black;
+  /* z-index workaround for iOS */
+  -webkit-transform: translateZ(1px);
 }
