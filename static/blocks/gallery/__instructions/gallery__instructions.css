@@ -5,6 +5,12 @@
 
 
 /* ----- MEDIA QUERIES ----- */
+@supports (-webkit-touch-callout: none) {
+   /* CSS specific to iOS devices */
+   .gallery__instructions {
+     display: hidden;
+   }
+}
 
 
 /* anything larger than 880px, use defaults */

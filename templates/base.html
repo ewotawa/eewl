@@ -10,11 +10,6 @@
     <link rel="stylesheet" href="../static/pages/index.css">
   </head>
   <body class="body">
-    <div class="modal" id="modal">
-      <div class="modal__close" onclick="closeModal()">&times;</div>
-      <div class="modal__content" id="modal__content"></div>
-    </div>
-
     <div class="page">
 
       <header class="header">
@@ -36,27 +31,27 @@
           <p class="gallery__instructions">Click on an image to learn more about the design.</p>
           <ul class="gallery__list">
             <li class="gallery__item">
-              <a href="#modal" class="gallery__overlay-container">
+              <div href="#modal" class="gallery__overlay-container" onclick="openModal();currentSlide(1)">
                 <img class="gallery__image" src="../static/images/sun_and_reeds.jpg" alt="image of designer wearing a scarf featuring a motif including the sun, Egyptian lotus flowers, and reeds. Colors are orange and black.">
-                <div class="gallery__image-overlay" id = "gallery__image_item_sun-reeds" onclick="openModal();currentSlide(1)"></div>
-              </a>
+                <div class="gallery__image-overlay" id = "gallery__image_item_sun-reeds"></div>
+              </div>
             </li>
             <li class="gallery__item">
-              <a href="#modal" class="gallery__overlay-container">
+              <a href="#modal" class="gallery__overlay-container" onclick="openModal();currentSlide(1)">
                 <img class="gallery__image" src="../static/images/isis.jpg" alt="image of designer wearing a scarf featuring a motif of the Ancient Egyptian goddess Isis. Isis appears in a pose common on mummy coffins: kneeling, winged arms outstretched. Colors are orange and black.">
-                <div class="gallery__image-overlay" id = "gallery__image_item_isis" onclick="openModal();currentSlide(1)"></div>
+                <div class="gallery__image-overlay" id = "gallery__image_item_isis"></div>
               </a>
             </li>
             <li class="gallery__item">
-              <a href="#modal" class="gallery__overlay-container">
+              <a href="#modal" class="gallery__overlay-container" onclick="openModal();currentSlide(1)">
                 <img class="gallery__image" src="../static/images/skulls.jpg"  alt="image of designer wearing a scarf featuring skulls. Skulls alternate upright and upside-down along the length of the scarf. Colors are blue and a pink-yellow-orange variegated blend.">
-                <div class="gallery__image-overlay" id = "gallery__image_item_skulls" onclick="openModal();currentSlide(1)"></div>
+                <div class="gallery__image-overlay" id = "gallery__image_item_skulls"></div>
               </a>
             </li>
             <li class="gallery__item">
-              <a href="#modal" class="gallery__overlay-container">
+              <a href="#modal" class="gallery__overlay-container" onclick="openModal();currentSlide(1)">
                 <img class="gallery__image" src="../static/images/lotus.jpg" alt="image of designer wearing a scarf featuring the Ancient Egyptian lotus flower. A lotus in full bloom is the finial on each end of the motif, alongside flower buds. Colors are orange and blue.">
-                <div class="gallery__image-overlay" id = "gallery__image_item_lotus" onclick="openModal();currentSlide(1)"></div>
+                <div class="gallery__image-overlay" id = "gallery__image_item_lotus"></div>
               </a>
             </li>
           </ul>
@@ -67,6 +62,11 @@
         {% endblock %}
 
       </main>
+
+      <div class="modal" id="modal">
+        <div class="modal__close" onclick="closeModal()">&times;</div>
+        <div class="modal__content" id="modal__content"></div>
+      </div>
 
       <footer class="footer">
         <div class="footer__container">
