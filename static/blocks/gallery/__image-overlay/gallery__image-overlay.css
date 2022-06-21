@@ -1,9 +1,0 @@
-.gallery__image-overlay {
-  background-color: rgba(42, 44, 47, 0);
-  min-width: 300px;
-  min-height: 300px;
-  /* grid styling */
-  grid-area: container;
-  grid-area: 1/1;
-  place-self: center;
-}
