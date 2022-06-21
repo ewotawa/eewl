@@ -10,6 +10,8 @@
   transition: background-color 2s linear;
 }
 
+/* turn off hover to see if it fixes the modal window issue
 .gallery__image-overlay:hover {
   background-color: rgba(42, 44, 47, 0.5);
 }
+*/

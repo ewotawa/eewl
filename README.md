@@ -13,3 +13,4 @@
 * [Z-index issue on iOS Safari & Chrome](https://stackoverflow.com/questions/18255511/z-index-issue-on-ios-safari-chrome)
 * [CSS-Tricks FORUMS: Safari for iOS z-index ordering bug while scrolling a page with a fixed element](https://css-tricks.com/forums/topic/safari-for-ios-z-index-ordering-bug-while-scrolling-a-page-with-a-fixed-element/)
 * [Fix scrolling bug on iOS Safari with fixed elements and bottom bar](https://gist.github.com/nicolaskopp/637aa4e20c66fe41a6ea2a0773935f6e)
+* [CSS: Bootstrap modal doesn't work on iPhone](https://youtu.be/MqZefcZ-Lrk)
