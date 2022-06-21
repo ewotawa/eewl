@@ -10,3 +10,9 @@
   background-color: black;
   position: fixed;
 }
+
+@media screen and (max-width: 400px) {
+  .modal {
+    padding-top: 75px;
+  }
+}
