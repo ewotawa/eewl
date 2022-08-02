@@ -14,10 +14,10 @@
 /* resolution more than 320px, fewer than 880px */
 
 /* resolution more than 320px, fewer than 880px */
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 320px) {
   .contact__container {
     padding: 8px;
-    width: 100%;
-    border-radius: none;
+    width: 302px;
+    border-radius: 0;
   }
 }
