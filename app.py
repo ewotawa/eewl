@@ -11,13 +11,14 @@ from forms import ContactForm
 
 app = Flask(__name__)
 
-app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
+#app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
+app.config['SECRET_KEY'] = 'VE6Fjd2YGIxQN95kgQ7NhucCa'
 
 ################################
 ##### DATABASE ENVIRONMENT #####
 ################################
 
-ENV = 'prod'
+ENV = 'dev'
 
 if ENV == 'dev':
     app.debug = True
