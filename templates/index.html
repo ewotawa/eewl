@@ -14,6 +14,7 @@
               <label class="contact__input_field_msg-type-label" for="msg-type">Message Type:</label>
               {{ form.msg_type(class="contact__input contact__input_field_msg-type")}}
               {{ form.msg_body(class="contact__input contact__input_field_msg-body", placeholder="Enter your message here.")}}
+              {{ recaptcha }}
               {{ form.submit(class="contact__submit")}}
             </form>
           </div>

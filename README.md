@@ -15,3 +15,6 @@
 * [Fix scrolling bug on iOS Safari with fixed elements and bottom bar](https://gist.github.com/nicolaskopp/637aa4e20c66fe41a6ea2a0773935f6e)
 * [CSS: Bootstrap modal doesn't work on iPhone](https://youtu.be/MqZefcZ-Lrk)
 * [“css ios media query” Code Answer](https://www.codegrepper.com/code-examples/css/css+ios+media+query)
+* [I'd like to run automated tests with reCAPTCHA. What should I do?](https://developers.google.com/recaptcha/docs/faq#id-like-to-run-automated-tests-with-recaptcha.-what-should-i-do)
+* [Using reCAPTCHA on localhost](https://stackoverflow.com/questions/3232904/using-recaptcha-on-localhost)
+* [How To Use Google reCAPTCHA With Flask](https://python.plainenglish.io/how-to-use-google-recaptcha-with-flask-dbd79d5ea193)
