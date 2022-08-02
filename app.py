@@ -16,18 +16,20 @@ app = Flask(__name__)
 ################################
 ##### SECRET KEY FOR FORMS #####
 ################################
-#app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
-app.config['SECRET_KEY'] = 'VE6Fjd2YGIxQN95kgQ7NhucCa'
+# ----- prod -----
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
+# ----- dev -----
+# app.config['SECRET_KEY'] = ''
 
 ################################
 ### SECRET KEY FOR RECAPTCHA ###
 ################################
-# dev
-app.config['RECAPTCHA_SITE_KEY'] = '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
-app.config['RECAPTCHA_SECRET_KEY'] = '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe'
-# prod
-#app.config['RECAPTCHA_SITE_KEY'] = os.getenv('RECAPTCHA_SITE_KEY')
-#app.config['RECAPTCHA_SECRET_KEY'] = os.getenv('RECAPTCHA_SECRET_KEY')
+# ----- dev -----
+# app.config['RECAPTCHA_SITE_KEY'] = '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+# app.config['RECAPTCHA_SECRET_KEY'] = '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe'
+# ----- prod -----
+app.config['RECAPTCHA_SITE_KEY'] = os.getenv('RECAPTCHA_SITE_KEY')
+app.config['RECAPTCHA_SECRET_KEY'] = os.getenv('RECAPTCHA_SECRET_KEY')
 # Create a ReCaptcha object by passing in 'app' as parameter
 recaptcha = ReCaptcha(app)
 
@@ -35,7 +37,7 @@ recaptcha = ReCaptcha(app)
 ##### DATABASE ENVIRONMENT #####
 ################################
 
-ENV = 'dev'
+ENV = 'prod'
 
 if ENV == 'dev':
     app.debug = True
