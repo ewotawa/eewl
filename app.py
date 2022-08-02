@@ -24,7 +24,6 @@ app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 ################################
 ### SECRET KEY FOR RECAPTCHA ###
 ################################
-app.config['RECAPTCHA_DATA_ATTRS'] = {'size': 'compact'}
 # ----- dev -----
 # app.config['RECAPTCHA_SITE_KEY'] = '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
 # app.config['RECAPTCHA_SECRET_KEY'] = '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe'
@@ -109,5 +108,5 @@ def submit():
             return render_template('confirmsubmit.html')
 
 if __name__ == '__main__':
-    #app.run()
-    app.run(debug = True)
+    app.run()
+    #app.run(debug = True)

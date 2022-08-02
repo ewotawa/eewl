@@ -21,3 +21,9 @@
     max-width: 300px;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .contact {
+    max-width: 100%;
+  }
+}
