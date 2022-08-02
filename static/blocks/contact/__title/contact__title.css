@@ -2,3 +2,19 @@
   margin: 16px;
   width: 100%;
 }
+
+/* ----- MEDIA QUERIES ----- */
+
+
+/* anything larger than 880px, use defaults */
+
+/* resolution more than 320px, fewer than 880px */
+
+/* resolution more than 320px, fewer than 880px */
+@media screen and (max-width: 880px) {
+  .contact__title {
+    margin: 0;
+    padding: 16px;
+    width: 75%;
+  }
+}
