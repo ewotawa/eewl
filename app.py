@@ -106,6 +106,9 @@ def submit():
             # send e-mail
             send_mail(name, email, subject, msg_type, msg_body)
             return render_template('confirmsubmit.html')
+        else:
+            # if don't pass reCAPTCHA, reload the home page.
+            return render_template('index.html', form = form)
 
 if __name__ == '__main__':
     app.run()
