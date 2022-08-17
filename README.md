@@ -18,4 +18,5 @@
 * [I'd like to run automated tests with reCAPTCHA. What should I do?](https://developers.google.com/recaptcha/docs/faq#id-like-to-run-automated-tests-with-recaptcha.-what-should-i-do)
 * [Using reCAPTCHA on localhost](https://stackoverflow.com/questions/3232904/using-recaptcha-on-localhost)
 * [How To Use Google reCAPTCHA With Flask](https://python.plainenglish.io/how-to-use-google-recaptcha-with-flask-dbd79d5ea193)
-* [https://devcenter.heroku.com/articles/custom-domains](https://devcenter.heroku.com/articles/custom-domains)
+* [Custom Domain Names for Apps](https://devcenter.heroku.com/articles/custom-domains)
+* [How to set up Heroku SSL (https) with Google Domains in 2021](https://nikodunk.com/heroku-ssl-google-domains-2019/)
