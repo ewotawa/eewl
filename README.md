@@ -20,3 +20,5 @@
 * [How To Use Google reCAPTCHA With Flask](https://python.plainenglish.io/how-to-use-google-recaptcha-with-flask-dbd79d5ea193)
 * [Custom Domain Names for Apps](https://devcenter.heroku.com/articles/custom-domains)
 * [How to set up Heroku SSL (https) with Google Domains in 2021](https://nikodunk.com/heroku-ssl-google-domains-2019/)
+* [How to Add Custom Domain to Heroku Server | Google Domain](https://www.youtube.com/watch?v=2I1CtDCWmg4)
+* [Set up the "naked" domain address for your site](https://support.google.com/a/answer/2518373?product_name=UnuFlow&hl=en&visit_id=1660783127585-6713317793632259114&rd=1&src=supportwidget0&hl=en)
