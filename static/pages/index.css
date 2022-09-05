@@ -4,6 +4,7 @@
 @import url('../fonts/noto sans egyptian hieroglyphs/noto sans egyptian hieroglyphs.css');
 
 @import url('../blocks/about/about.css');
+@import url('../blocks/about/__href/about__href.css');
 @import url('../blocks/about/__link/about__link.css');
 @import url('../blocks/about/__shop/about__shop.css');
 @import url('../blocks/about/__shop-icon/about__shop-icon.css');
