@@ -78,15 +78,15 @@ const imgDjedKnotIsis = [
 const imgAten = [
   {
     'path': '../static/images/aten_03_wm.jpg',
-    'alt': 'The Pharaoh Akhenaten ruled shortly before King Tutankhamun. He imposed a new religion on Ancient Egypt during his reign: instead of worshipping their traditional pantheon, they worshipped only the Aten, or sun disk. The hieroglyphs in this design translate to "Aten".',
+    'alt': 'The Pharaoh Akhenaten ruled shortly before King Tutankhamun. He briefly imposed a new religion on Ancient Egypt during his reign: instead of worshipping their traditional pantheon, they worshipped only the Aten, or sun disk. The hieroglyphs in this design translate to "Aten".',
   },
   {
     'path': '../static/images/aten_00_wm.jpg',
-    'alt': 'The Pharaoh Akhenaten ruled shortly before King Tutankhamun. He imposed a new religion on Ancient Egypt during his reign: instead of worshipping their traditional pantheon, they worshipped only the Aten, or sun disk. The hieroglyphs in this design translate to "Aten".',
+    'alt': 'The Pharaoh Akhenaten ruled shortly before King Tutankhamun. He briefly imposed a new religion on Ancient Egypt during his reign: instead of worshipping their traditional pantheon, they worshipped only the Aten, or sun disk. The hieroglyphs in this design translate to "Aten".',
   },
   {
     'path': '../static/images/aten_01_wm.jpg',
-    'alt': 'The Pharaoh Akhenaten ruled shortly before King Tutankhamun. He imposed a new religion on Ancient Egypt during his reign: instead of worshipping their traditional pantheon, they worshipped only the Aten, or sun disk. The hieroglyphs in this design translate to "Aten".',
+    'alt': 'The Pharaoh Akhenaten ruled shortly before King Tutankhamun. He briefly imposed a new religion on Ancient Egypt during his reign: instead of worshipping their traditional pantheon, they worshipped only the Aten, or sun disk. The hieroglyphs in this design translate to "Aten".',
   }
 ]
 
