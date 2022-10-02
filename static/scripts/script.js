@@ -90,20 +90,6 @@ const imgAten = [
   }
 ]
 
-const imgSkulls = [
-  {
-    'path': '../static/images/skull_01_wm.jpg',
-    'alt': 'Skulls relate more closely to my favorite holiday: Halloween. Although uncommon in Ancient Egyptian art, they are a frequent sight in tomb excavations.',
-  },
-  {
-    'path': '../static/images/skull_02_wm.jpg',
-    'alt': 'Skulls relate more closely to my favorite holiday: Halloween. Although uncommon in Ancient Egyptian art, they are a frequent sight in tomb excavations.',
-  },
-  {
-    'path': '../static/images/skull_05_wm.jpg',
-    'alt': 'Skulls relate more closely to my favorite holiday: Halloween. Although uncommon in Ancient Egyptian art, they are a frequent sight in tomb excavations.',
-  }
-]
 
 
 /* set original status of modal window */
@@ -162,8 +148,6 @@ function openModal() {
     populateDom(imgSunAndReeds);
   } else if (imgID == 'gallery__image_item_isis') {
     populateDom(imgIsis);
-  } else if (imgID == 'gallery__image_item_skulls') {
-    populateDom(imgSkulls);
   } else if (imgID == 'gallery__image_item_lotus') {
     populateDom(imgLotus);
   } else if (imgID == 'gallery__image_item_djed') {
@@ -212,8 +196,6 @@ function openModal() {
     populateThumbnail(imgSunAndReeds);
   } else if (imgID == 'gallery__image_item_isis') {
     populateThumbnail(imgIsis);
-  } else if (imgID == 'gallery__image_item_skulls') {
-    populateThumbnail(imgSkulls);
   } else if (imgID == 'gallery__image_item_lotus') {
     populateThumbnail(imgLotus);
   } else if (imgID == 'gallery__image_item_djed') {
