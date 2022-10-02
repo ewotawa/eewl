@@ -1,65 +1,110 @@
 /* Use variables to define the images associated with the modal depending on image clicked. */
 
-const imgSunAndReeds = [
+const imgEyeHorus = [
   {
-    'path': '../static/images/sun_and_reeds.jpg',
-    'alt': 'alt description for image',
+    'path': '../static/images/eye-of-horus_02_wm.jpg',
+    'alt': 'The Eye of Horus, also known as the wedjat or the udjat, symbolizes protection and well-beign in the Ancient Egyptian belief system.',
   },
   {
-    'path': '../static/images/sun_and_reeds.jpg',
-    'alt': 'alt description for image',
+    'path': '../static/images/eye-of-horus_00_wm.jpg',
+    'alt': 'The Eye of Horus, also known as the wedjat or the udjat, symbolizes protection and well-beign in the Ancient Egyptian belief system.',
   },
   {
-    'path': '../static/images/sun_and_reeds.jpg',
-    'alt': 'alt description for image',
+    'path': '../static/images/eye-of-horus_03_wm.jpg',
+    'alt': 'The Eye of Horus, also known as the wedjat or the udjat, symbolizes protection and well-beign in the Ancient Egyptian belief system.',
   }
 ]
 
+const imgSunAndReeds = [
+  {
+    'path': '../static/images/sun-reeds_02_wm.jpg',
+    'alt': 'This piece pays tribute to imagery common throughout Ancient Egyptian Art: the sun, lotus blossoms, and papyrus reeds.',
+  },
+  {
+    'path': '../static/images/sun-reeds-00_wm.jpg',
+    'alt': 'This piece pays tribute to imagery common throughout Ancient Egyptian Art: the sun, lotus blossoms, and papyrus reeds.',
+  },
+  {
+    'path': '../static/images/sun-reeds-01_wm.jpg',
+    'alt': 'This piece pays tribute to imagery common throughout Ancient Egyptian Art: the sun, lotus blossoms, and papyrus reeds.',
+  }
+]
 
 const imgIsis = [
   {
-    'path': '../static/images/isis.jpg',
-    'alt': 'alt description for image',
+    'path': '../static/images/winged-goddess_02_wm.jpg',
+    'alt': 'Winged deities appear as a symbol of protection in Ancient Egyptian art. Among the most common goddesses are Isis, the wife of Osiris; her sister Nepthys, and Maat.',
   },
   {
-    'path': '../static/images/isis.jpg',
-    'alt': 'alt description for image',
+    'path': '../static/images/winged-goddess_01_wm.jpg',
+    'alt': 'Winged deities appear as a symbol of protection in Ancient Egyptian art. Among the most common goddesses are Isis, the wife of Osiris; her sister Nepthys, and Maat.',
   },
   {
-    'path': '../static/images/isis.jpg',
-    'alt': 'alt description for image',
-  }
-]
-
-const imgSkulls = [
-  {
-    'path': '../static/images/skulls.jpg',
-    'alt': 'alt description for image',
-  },
-  {
-    'path': '../static/images/skulls.jpg',
-    'alt': 'alt description for image',
-  },
-  {
-    'path': '../static/images/skulls.jpg',
-    'alt': 'alt description for image',
+    'path': '../static/images/winged-goddess_03_wm.jpg',
+    'alt': 'Winged deities appear as a symbol of protection in Ancient Egyptian art. Among the most common goddesses are Isis, the wife of Osiris; her sister Nepthys, and Maat.',
   }
 ]
 
 const imgLotus = [
   {
-    'path': '../static/images/lotus.jpg',
-    'alt': 'alt description for image',
+    'path': '../static/images/lotus_02_wm.jpg',
+    'alt': 'The Ancient Egyptians saw the lotus blossom as a symbol of rebirth.',
   },
   {
-    'path': '../static/images/lotus.jpg',
-    'alt': 'alt description for image',
+    'path': '../static/images/lotus_03_wm.jpg',
+    'alt': 'The Ancient Egyptians saw the lotus blossom as a symbol of rebirth.',
   },
   {
-    'path': '../static/images/lotus.jpg',
-    'alt': 'alt description for image',
+    'path': '../static/images/lotus_00_wm.jpg',
+    'alt': 'The Ancient Egyptians saw the lotus blossom as a symbol of rebirth.',
   }
 ]
+
+const imgDjedKnotIsis = [
+  {
+    'path': '../static/images/djed-knot-isis_00_wm.jpg',
+    'alt': 'The Djed pillar and the Knot of Isis represent husband-and-wife deities Osiris and Isis, respectivitely. This pattern features prominently in the funerary goods of King Tutankhamun.',
+  },
+  {
+    'path': '../static/images/djed-knot-isis_01_wm.jpg',
+    'alt': 'The Djed pillar and the Knot of Isis represent husband-and-wife deities Osiris and Isis, respectivitely. This pattern features prominently in the funerary goods of King Tutankhamun.',
+  },
+  {
+    'path': '../static/images/djed-knot-isis_03_wm.jpg',
+    'alt': 'The Djed pillar and the Knot of Isis represent husband-and-wife deities Osiris and Isis, respectivitely. This pattern features prominently in the funerary goods of King Tutankhamun.',
+  }
+]
+
+const imgAten = [
+  {
+    'path': '../static/images/aten_03_wm.jpg',
+    'alt': 'The Pharaoh Akhenaten ruled shortly before King Tutankhamun. He imposed a new religion on Ancient Egypt during his reign: instead of worshipping their traditional pantheon, they worshipped only the Aten, or sun disk. The hieroglyphs in this design translate to "Aten".',
+  },
+  {
+    'path': '../static/images/djed-knot-isis_01_wm.jpg',
+    'alt': 'The Pharaoh Akhenaten ruled shortly before King Tutankhamun. He imposed a new religion on Ancient Egypt during his reign: instead of worshipping their traditional pantheon, they worshipped only the Aten, or sun disk. The hieroglyphs in this design translate to "Aten".',
+  },
+  {
+    'path': '../static/images/djed-knot-isis_03_wm.jpg',
+    'alt': 'The Pharaoh Akhenaten ruled shortly before King Tutankhamun. He imposed a new religion on Ancient Egypt during his reign: instead of worshipping their traditional pantheon, they worshipped only the Aten, or sun disk. The hieroglyphs in this design translate to "Aten".',
+  }
+]
+
+const imgSkulls = [
+  {
+    'path': '../static/images/skull_01_wm.jpg',
+    'alt': 'Skulls relate more closely to my favorite holiday: Halloween. Although uncommon in Ancient Egyptian art, they are a frequent sight in tomb excavations.',
+  },
+  {
+    'path': '../static/images/skull_02_wm.jpg',
+    'alt': 'Skulls relate more closely to my favorite holiday: Halloween. Although uncommon in Ancient Egyptian art, they are a frequent sight in tomb excavations.',
+  },
+  {
+    'path': '../static/images/skull_05_wm.jpg',
+    'alt': 'Skulls relate more closely to my favorite holiday: Halloween. Although uncommon in Ancient Egyptian art, they are a frequent sight in tomb excavations.',
+  }
+]
+
 
 /* set original status of modal window */
 document.getElementById('modal').style.display = 'none';
@@ -121,6 +166,12 @@ function openModal() {
     populateDom(imgSkulls);
   } else if (imgID == 'gallery__image_item_lotus') {
     populateDom(imgLotus);
+  } else if (imgID == 'gallery__image_item_djed') {
+    populateDom(imgDjedKnotIsis)
+  } else if (imgID == 'gallery__image_item_eye-horus') {
+    populateDom(imgEyeHorus)
+  } else if (imgID == 'gallery__image_item_aten') {
+    populateDom(imgAten)
   } else {
     /* if there's nothing to open, close the modal window. */
     closeModal();
