@@ -21,11 +21,11 @@ const imgSunAndReeds = [
     'alt': 'This piece pays tribute to imagery common throughout Ancient Egyptian Art: the sun, lotus blossoms, and papyrus reeds.',
   },
   {
-    'path': '../static/images/sun-reeds-00_wm.jpg',
+    'path': '../static/images/sun-reeds_00_wm.jpg',
     'alt': 'This piece pays tribute to imagery common throughout Ancient Egyptian Art: the sun, lotus blossoms, and papyrus reeds.',
   },
   {
-    'path': '../static/images/sun-reeds-01_wm.jpg',
+    'path': '../static/images/sun-reeds_01_wm.jpg',
     'alt': 'This piece pays tribute to imagery common throughout Ancient Egyptian Art: the sun, lotus blossoms, and papyrus reeds.',
   }
 ]
@@ -81,11 +81,11 @@ const imgAten = [
     'alt': 'The Pharaoh Akhenaten ruled shortly before King Tutankhamun. He imposed a new religion on Ancient Egypt during his reign: instead of worshipping their traditional pantheon, they worshipped only the Aten, or sun disk. The hieroglyphs in this design translate to "Aten".',
   },
   {
-    'path': '../static/images/djed-knot-isis_01_wm.jpg',
+    'path': '../static/images/aten_00_wm.jpg',
     'alt': 'The Pharaoh Akhenaten ruled shortly before King Tutankhamun. He imposed a new religion on Ancient Egypt during his reign: instead of worshipping their traditional pantheon, they worshipped only the Aten, or sun disk. The hieroglyphs in this design translate to "Aten".',
   },
   {
-    'path': '../static/images/djed-knot-isis_03_wm.jpg',
+    'path': '../static/images/aten_01_wm.jpg',
     'alt': 'The Pharaoh Akhenaten ruled shortly before King Tutankhamun. He imposed a new religion on Ancient Egypt during his reign: instead of worshipping their traditional pantheon, they worshipped only the Aten, or sun disk. The hieroglyphs in this design translate to "Aten".',
   }
 ]
