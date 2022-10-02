@@ -33,15 +33,15 @@ const imgSunAndReeds = [
 const imgIsis = [
   {
     'path': '../static/images/winged-goddess_02_wm.jpg',
-    'alt': 'Winged deities appear as a symbol of protection in Ancient Egyptian art. Among the most common goddesses are Isis, the wife of Osiris; her sister Nepthys, and Maat.',
+    'alt': 'Winged deities appear as a symbol of protection in Ancient Egyptian art. Among the most common goddesses are Isis, the wife of Osiris; her sister Nepthys; and Maat.',
   },
   {
     'path': '../static/images/winged-goddess_01_wm.jpg',
-    'alt': 'Winged deities appear as a symbol of protection in Ancient Egyptian art. Among the most common goddesses are Isis, the wife of Osiris; her sister Nepthys, and Maat.',
+    'alt': 'Winged deities appear as a symbol of protection in Ancient Egyptian art. Among the most common goddesses are Isis, the wife of Osiris; her sister Nepthys; and Maat.',
   },
   {
     'path': '../static/images/winged-goddess_03_wm.jpg',
-    'alt': 'Winged deities appear as a symbol of protection in Ancient Egyptian art. Among the most common goddesses are Isis, the wife of Osiris; her sister Nepthys, and Maat.',
+    'alt': 'Winged deities appear as a symbol of protection in Ancient Egyptian art. Among the most common goddesses are Isis, the wife of Osiris; her sister Nepthys; and Maat.',
   }
 ]
 
@@ -216,6 +216,12 @@ function openModal() {
     populateThumbnail(imgSkulls);
   } else if (imgID == 'gallery__image_item_lotus') {
     populateThumbnail(imgLotus);
+  } else if (imgID == 'gallery__image_item_djed') {
+    populateThumbnail(imgDjedKnotIsis)
+  } else if (imgID == 'gallery__image_item_eye-horus') {
+    populateThumbnail(imgEyeHorus)
+  } else if (imgID == 'gallery__image_item_aten') {
+    populateThumbnail(imgAten)
   } else {
     /* if there's nothing to open, close the modal window. */
     closeModal();
