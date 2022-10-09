@@ -2,7 +2,7 @@
 
 const imgEyeHorus = [
   {
-    'path': '../static/images/eye-of-horus_02_wm.jpg',
+    'path': '../static/images/eye-of-horus_05_wm.jpg',
     'alt': 'The Eye of Horus, also known as the wedjat or the udjat, symbolizes protection and well-being in the Ancient Egyptian belief system.',
   },
   {
