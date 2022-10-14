@@ -22,3 +22,5 @@
 * [How to set up Heroku SSL (https) with Google Domains in 2021](https://nikodunk.com/heroku-ssl-google-domains-2019/)
 * [How to Add Custom Domain to Heroku Server | Google Domain](https://www.youtube.com/watch?v=2I1CtDCWmg4)
 * [Set up the "naked" domain address for your site](https://support.google.com/a/answer/2518373?product_name=UnuFlow&hl=en&visit_id=1660783127585-6713317793632259114&rd=1&src=supportwidget0&hl=en)
+* [Embed Code Generator](https://embed.ly/code?url=https%3A%2F%2Fmedium.com%2F%40eewl)
+* [How to Embed Medium Posts and Feeds on Your Site](https://blogpros.com/blog/2019/03/embed-medium-posts-site)

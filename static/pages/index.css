@@ -10,6 +10,12 @@
 @import url('../blocks/about/__shop-icon/about__shop-icon.css');
 @import url('../blocks/about/__title/about__title.css');
 
+@import url('../blocks/blog/blog.css');
+@import url('../blocks/blog/__container/blog__container.css');
+@import url('../blocks/blog/__instructions/blog__instructions.css');
+@import url('../blocks/blog/__submit/blog__submit.css');
+@import url('../blocks/blog/__title/blog__title.css');
+
 @import url('../blocks/body/body.css');
 
 @import url('../blocks/contact/contact.css');
