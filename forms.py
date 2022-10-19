@@ -9,7 +9,7 @@ class ContactForm(FlaskForm):
     name = StringField(validators=[DataRequired()])
     email = StringField(validators=[Email(), DataRequired()])
     subject = StringField(validators=[DataRequired()])
-    msg_type = SelectField(choices = [('commission', 'Commission a custom piece'), ('question', 'Ask a Question'), ('other', 'Other')])
+    msg_type = SelectField(choices = [('mail', 'Join the EEWL mailing list'), ('commission', 'Commission a custom piece'), ('question', 'Ask a Question'), ('other', 'Other')])
     msg_body = TextAreaField(validators=[DataRequired()])
     submit = SubmitField()
     #recaptcha = RecaptchaField()
