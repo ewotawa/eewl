@@ -10,6 +10,10 @@ from send_mail import send_mail
 from forms import ContactForm
 # reCAPTCHA
 from flask_recaptcha import ReCaptcha
+# security
+import secure
+
+secure_headers = secure.Secure()
 
 app = Flask(__name__, static_url_path='/static')
 
@@ -116,5 +120,5 @@ def static_from_root():
     return send_from_directory(app.static_folder, request.path[1:])
 
 if __name__ == '__main__':
-    app.run(ssl_context='adhoc')
+    app.run()
     #app.run(debug = True)

@@ -33,4 +33,6 @@
 * [How Google interprets the robots.txt specification](https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt)
 
 ### Security
-* [Running Your Flask Application Over HTTPS](https://blog.miguelgrinberg.com/post/running-your-flask-application-over-https)
+* [Python Friday #43: Add Security Headers to Your Flask Application](https://improveandrepeat.com/2020/10/python-friday-43-add-security-headers-to-your-flask-application/)
+* [secure.py](https://github.com/cak/secure)
+* [Secure Headers](https://secure.readthedocs.io/en/latest/headers.html)
