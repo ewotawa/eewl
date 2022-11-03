@@ -13,7 +13,14 @@ from flask_recaptcha import ReCaptcha
 # security
 import secure
 
-secure_headers = secure.Secure()
+################################
+##### SECURITY DEFINITIONS #####
+################################
+
+# set the X-XSS-Protection header
+xxp = secure.Secure(xxp=secure.XXSSProtection())
+
+secure_headers = secure.Secure(xxp = xxp)
 
 app = Flask(__name__, static_url_path='/static')
 

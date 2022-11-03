@@ -26,6 +26,7 @@
 * [How to Embed Medium Posts and Feeds on Your Site](https://blogpros.com/blog/2019/03/embed-medium-posts-site)
 
 ### SEO References
+* [Essential SEO Toolkit (SEO Analysis Tool)](https://chrome.google.com/webstore/detail/essential-seo-toolkit-seo/icagkiolfkmndbggheneeamfbnobcdma/related?hl=en)
 * [With Flask, how can I serve robots.txt and sitemap.xml as static files?](https://stackoverflow.com/questions/14048779/with-flask-how-can-i-serve-robots-txt-and-sitemap-xml-as-static-files)
 * [XML Sitemaps Generator](https://www.xml-sitemaps.com/)
 * [Remove images hosted on your site from search results](https://developers.google.com/search/docs/crawling-indexing/prevent-images-on-your-page)
@@ -36,3 +37,4 @@
 * [Python Friday #43: Add Security Headers to Your Flask Application](https://improveandrepeat.com/2020/10/python-friday-43-add-security-headers-to-your-flask-application/)
 * [secure.py](https://github.com/cak/secure)
 * [Secure Headers](https://secure.readthedocs.io/en/latest/headers.html)
+* [Flask: Before and After request Decorators](https://medium.com/innovation-incubator/flask-before-and-after-request-decorators-e639b06c2128)
