@@ -114,10 +114,25 @@ def submit():
             # if don't pass reCAPTCHA, reload the home page.
             return render_template('index.html', form = form)
 
+##########################
+##### ROUTES FOR SEO #####
+##########################
+
 @app.route('/robots.txt')
 @app.route('/sitemap.xml')
 def static_from_root():
     return send_from_directory(app.static_folder, request.path[1:])
+
+###############################
+##### ROUTES FOR SECURITY #####
+###############################
+
+# executes a function after each request.
+
+@app.after_request
+def set_secure_headers(response):
+    secure_headers.framework.flask(response)
+    return response
 
 if __name__ == '__main__':
     app.run()
