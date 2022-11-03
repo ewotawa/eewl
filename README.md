@@ -31,3 +31,6 @@
 * [Remove images hosted on your site from search results](https://developers.google.com/search/docs/crawling-indexing/prevent-images-on-your-page)
 * [Create a robots.txt file](https://developers.google.com/search/docs/crawling-indexing/robots/create-robots-txt)
 * [How Google interprets the robots.txt specification](https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt)
+
+### Security
+* [Running Your Flask Application Over HTTPS](https://blog.miguelgrinberg.com/post/running-your-flask-application-over-https)

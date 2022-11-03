@@ -116,5 +116,5 @@ def static_from_root():
     return send_from_directory(app.static_folder, request.path[1:])
 
 if __name__ == '__main__':
-    app.run()
+    app.run(ssl_context='adhoc')
     #app.run(debug = True)
