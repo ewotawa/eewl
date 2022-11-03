@@ -18,7 +18,7 @@ import secure
 ################################
 
 # set the X-XSS-Protection header
-xxp = secure.Secure(xxp=secure.XXSSProtection())
+xxp = secure.XXSSProtection()
 
 secure_headers = secure.Secure(xxp = xxp)
 
