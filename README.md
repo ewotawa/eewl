@@ -24,3 +24,10 @@
 * [Set up the "naked" domain address for your site](https://support.google.com/a/answer/2518373?product_name=UnuFlow&hl=en&visit_id=1660783127585-6713317793632259114&rd=1&src=supportwidget0&hl=en)
 * [Embed Code Generator](https://embed.ly/code?url=https%3A%2F%2Fmedium.com%2F%40eewl)
 * [How to Embed Medium Posts and Feeds on Your Site](https://blogpros.com/blog/2019/03/embed-medium-posts-site)
+
+### SEO References
+* [With Flask, how can I serve robots.txt and sitemap.xml as static files?](https://stackoverflow.com/questions/14048779/with-flask-how-can-i-serve-robots-txt-and-sitemap-xml-as-static-files)
+* [XML Sitemaps Generator](https://www.xml-sitemaps.com/)
+* [Remove images hosted on your site from search results](https://developers.google.com/search/docs/crawling-indexing/prevent-images-on-your-page)
+* [Create a robots.txt file](https://developers.google.com/search/docs/crawling-indexing/robots/create-robots-txt)
+* [How Google interprets the robots.txt specification](https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt)

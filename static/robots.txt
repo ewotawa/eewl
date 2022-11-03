@@ -1,0 +1,30 @@
+# This robots.txt file controls crawling of URLs under https://example.com.
+# All crawlers are disallowed to crawl files in the directories listed below, such
+# as .css, .js, but Google needs them for rendering, so Googlebot is allowed
+# to crawl them.
+
+# Reference: https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt
+
+User-agent: *
+Disallow: /static/blocks/
+Disallow: /static/fonts/
+Disallow: /static/images/
+Disallow: /static/pages/
+Disallow: /static/scripts/
+Disallow: /static/vendor/
+
+User-agent: Googlebot
+Allow: /static/blocks/
+Allow: /static/fonts/
+Allow: /static/images/
+Allow: /static/pages/
+Allow: /static/scripts/
+Allow: /static/vendor/
+
+# To remove all the images on your site from our index, place the following robots.txt file in your server root:
+
+User-agent: Googlebot-Image
+Disallow: /static/images/*.jpg
+Disallow: /static/images/*.svg
+
+Sitemap: https://example.com/sitemap.xml

@@ -3,7 +3,7 @@
 # Imports from libraries
 import os
 import re
-from flask import Flask, render_template, session, redirect, url_for, request
+from flask import Flask, Response, render_template, session, redirect, url_for, request, send_from_directory
 from flask_sqlalchemy import SQLAlchemy
 from send_mail import send_mail
 # Imports from forms.py
@@ -11,7 +11,7 @@ from forms import ContactForm
 # reCAPTCHA
 from flask_recaptcha import ReCaptcha
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 
 ################################
 ##### SECRET KEY FOR FORMS #####
@@ -109,6 +109,11 @@ def submit():
         else:
             # if don't pass reCAPTCHA, reload the home page.
             return render_template('index.html', form = form)
+
+@app.route('/robots.txt')
+@app.route('/sitemap.xml')
+def static_from_root():
+    return send_from_directory(app.static_folder, request.path[1:])
 
 if __name__ == '__main__':
     app.run()
