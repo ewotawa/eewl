@@ -1,5 +1,20 @@
 /* Use variables to define the images associated with the modal depending on image clicked. */
 
+const imgRa = [
+  {
+    'path': '../static/images/ra-seated_00_wm.jpg',
+    'alt': 'Ra is one of three manifestations of the Ancient Egyptian sun god.',
+  },
+  {
+    'path': '../static/images/ra-seated_01_wm.jpg',
+    'alt': 'Ra is one of three manifestations of the Ancient Egyptian sun god.',
+  },
+  {
+    'path': '../static/images/ra-seated_03_worn_wm_ig_cropped.jpg',
+    'alt': 'Ra is one of three manifestations of the Ancient Egyptian sun god.',
+  }
+]
+
 const imgEyeHorus = [
   {
     'path': '../static/images/eye-of-horus_05_wm.jpg',
@@ -156,6 +171,8 @@ function openModal() {
     populateDom(imgEyeHorus)
   } else if (imgID == 'gallery__image_item_aten') {
     populateDom(imgAten)
+  } else if (imgID == 'gallery__image_item_ra') {
+    populateDom(imgRa)
   } else {
     /* if there's nothing to open, close the modal window. */
     closeModal();
@@ -204,7 +221,9 @@ function openModal() {
     populateThumbnail(imgEyeHorus)
   } else if (imgID == 'gallery__image_item_aten') {
     populateThumbnail(imgAten)
-  } else {
+  } else if (imgID == 'gallery__image_item_ra') {
+    populateThumbnail(imgRa)
+  }else {
     /* if there's nothing to open, close the modal window. */
     closeModal();
   }
