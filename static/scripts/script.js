@@ -1,5 +1,20 @@
 /* Use variables to define the images associated with the modal depending on image clicked. */
 
+const imgKhepri = [
+  {
+    'path': '../static/images/khepri_06_wm.jpg',
+    'alt': 'The scarab beetle Khepri is the morning manifestation of the Ancient Egyptian sun god.',
+  },
+  {
+    'path': '../static/images/khepri_07_wm.jpg',
+    'alt': 'The scarab beetle Khepri is the morning manifestation of the Ancient Egyptian sun god.',
+  },
+  {
+    'path': '../static/images/khepri_01_worn_wm.jpg',
+    'alt': 'The scarab beetle Khepri is the morning manifestation of the Ancient Egyptian sun god.',
+  }
+]
+
 const imgRa = [
   {
     'path': '../static/images/ra-seated_00_wm.jpg',
@@ -173,6 +188,8 @@ function openModal() {
     populateDom(imgAten)
   } else if (imgID == 'gallery__image_item_ra') {
     populateDom(imgRa)
+  } else if (imgID == 'gallery__image_item_khepri') {
+    populateDom(imgKhepri)
   } else {
     /* if there's nothing to open, close the modal window. */
     closeModal();
@@ -223,7 +240,9 @@ function openModal() {
     populateThumbnail(imgAten)
   } else if (imgID == 'gallery__image_item_ra') {
     populateThumbnail(imgRa)
-  }else {
+  } else if (imgID == 'gallery__image_item_khepri') {
+    populateThumbnail(imgKhepri)
+  } else {
     /* if there's nothing to open, close the modal window. */
     closeModal();
   }
