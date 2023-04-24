@@ -1,5 +1,20 @@
 /* Use variables to define the images associated with the modal depending on image clicked. */
 
+const imgBarque = [
+  {
+    'path': '../static/images/solar_boat_00.jpg',
+    'alt': 'The falcon-headed god Ra riding in his solar barque is the mid-day manifestation of the Ancient Egyptian sun god.',
+  },
+  {
+    'path': '../static/images/solar_boat_03.jpg',
+    'alt': 'The falcon-headed god Ra riding in his solar barque is the mid-day manifestation of the Ancient Egyptian sun god.',
+  },
+  {
+    'path': '../static/images/solar_boat_05.jpg',
+    'alt': 'The falcon-headed god Ra riding in his solar barque is the mid-day manifestation of the Ancient Egyptian sun god.',
+  }
+]
+
 const imgKhepri = [
   {
     'path': '../static/images/khepri_06_wm.jpg',
@@ -190,6 +205,8 @@ function openModal() {
     populateDom(imgRa)
   } else if (imgID == 'gallery__image_item_khepri') {
     populateDom(imgKhepri)
+  } else if (imgID == 'gallery__image_item_barque') {
+    populateDom(imgBarque)
   } else {
     /* if there's nothing to open, close the modal window. */
     closeModal();
@@ -242,6 +259,8 @@ function openModal() {
     populateThumbnail(imgRa)
   } else if (imgID == 'gallery__image_item_khepri') {
     populateThumbnail(imgKhepri)
+  } else if (imgId == 'gallery__image_item_barque') {
+    populateThumbnail(imgBarque)
   } else {
     /* if there's nothing to open, close the modal window. */
     closeModal();
