@@ -2,15 +2,15 @@
 
 const imgBarque = [
   {
-    'path': '../static/images/solar_boat_00.jpg',
+    'path': '../static/images/solar_boat_00_wm.jpg',
     'alt': 'The falcon-headed god Ra riding in his solar barque is the mid-day manifestation of the Ancient Egyptian sun god.',
   },
   {
-    'path': '../static/images/solar_boat_03.jpg',
+    'path': '../static/images/solar_boat_05_wm.jpg',
     'alt': 'The falcon-headed god Ra riding in his solar barque is the mid-day manifestation of the Ancient Egyptian sun god.',
   },
   {
-    'path': '../static/images/solar_boat_05.jpg',
+    'path': '../static/images/solar_boat_06_worn_wm.jpg',
     'alt': 'The falcon-headed god Ra riding in his solar barque is the mid-day manifestation of the Ancient Egyptian sun god.',
   }
 ]
