@@ -259,7 +259,7 @@ function openModal() {
     populateThumbnail(imgRa)
   } else if (imgID == 'gallery__image_item_khepri') {
     populateThumbnail(imgKhepri)
-  } else if (imgId == 'gallery__image_item_barque') {
+  } else if (imgID == 'gallery__image_item_barque') {
     populateThumbnail(imgBarque)
   } else {
     /* if there's nothing to open, close the modal window. */
