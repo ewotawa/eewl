@@ -1,5 +1,20 @@
 /* Use variables to define the images associated with the modal depending on image clicked. */
 
+const imgNefertiti = [
+  {
+    'path': '../static/images/nefertiti_00_wm.jpg',
+    'alt': 'Queen Nefertiti is probably one of the most recognizable Egyptian queens. Her portrait bust is on display in the Neues Museum in Berlin, Germany.',
+  },
+  {
+    'path': '../static/images/nefertiti_01_wm.jpg',
+    'alt': 'Queen Nefertiti is probably one of the most recognizable Egyptian queens. Her portrait bust is on display in the Neues Museum in Berlin, Germany.',
+  },
+  {
+    'path': '../static/images/nefertiti_02_wm.jpg',
+    'alt': 'Queen Nefertiti is probably one of the most recognizable Egyptian queens. Her portrait bust is on display in the Neues Museum in Berlin, Germany.',
+  }
+]
+
 const imgBarque = [
   {
     'path': '../static/images/solar_boat_00_wm.jpg',
@@ -207,6 +222,8 @@ function openModal() {
     populateDom(imgKhepri)
   } else if (imgID == 'gallery__image_item_barque') {
     populateDom(imgBarque)
+  } else if (imgID == 'gallery__image_item_nefertiti') {
+    populateDom(imgNefertiti)
   } else {
     /* if there's nothing to open, close the modal window. */
     closeModal();
@@ -261,6 +278,8 @@ function openModal() {
     populateThumbnail(imgKhepri)
   } else if (imgID == 'gallery__image_item_barque') {
     populateThumbnail(imgBarque)
+  } else if (imgID == 'gallery__image_item_nefertiti') {
+    populateThumbnail(imgNefertiti)
   } else {
     /* if there's nothing to open, close the modal window. */
     closeModal();
