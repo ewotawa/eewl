@@ -31,13 +31,13 @@
     <div class="page">
 
       <header class="header">
-        <a href={{ url_for('index') }}><img src="../static/images/eewl-light-gray.svg" class="logo logo__header" alt="EEWL"></a>
+        <a href={{ url_for('index') }}><svg xmlns="http://www.w3.org/2000/svg"><img src="../static/images/eewl-light-gray.svg" class="logo logo__header" alt="EEWL"></svg></a>
       </header>
 
       <main class="main">
 
         <section class="about">
-          <h1 class="about__title">EEWL: Hand-knit scarves celebrating Ancient Egypt</h1>
+          <h1 class="about__title">EEWL: Hand-knit scarves with Ancient Egyptian stories</h1>
           <h2 class="about__title">About</h2>
           <p class="about__paragraph">Introducing EEWL, a shop for handmade knitted scarves featuring designs inspired by Ancient Egyptian art and culture. I have a few goals for this project:</p>
           <ul class="about__paragraph">
@@ -114,7 +114,7 @@
           <h2 class="blog__title">Follow me on Substack</h2>
           <p class="blog__instructions">I'll be sharing stories about my designs and my inspirations from Ancient Egyptian art and culture on my blog. You can subscribe below to join the conversation.</p>
           <div class="blog__container">
-            <iframe src="https://eewl.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+            <iframe class="substack" src="https://eewl.substack.com/embed" frameborder="0" scrolling="no"></iframe>
           </div>
         </section>
 
@@ -131,15 +131,16 @@
 
       <footer class="footer">
         <div class="footer__container">
-          <a href={{ url_for('index') }}><img src="../static/images/eewl-white.svg" class="logo logo__footer" alt="EEWL"></a>
+          <a href={{ url_for('index') }}><svg xmlns="http://www.w3.org/2000/svg"><img src="../static/images/eewl-white.svg" class="logo logo__footer" alt="EEWL"></svg></a>
           <nav>
             <ul class="footer__links">
-              <li class="footer__link"><a href="https://www.etsy.com/shop/EEWL" class="footer__link-content" target="_blank"><i class="footer__icon fa-solid fa-shop"></i>Shop</a></li>
+              <li class="footer__link"><a href="https://www.etsy.com/shop/EEWL" class="footer__link-content" target="_blank"><i class="footer__icon fa-solid fa-brands fa-etsy"></i>Etsy Shop</a></li>
               <li class="footer__link"><a href="https://www.instagram.com/eewl_knits/" class="footer__link-content" target="_blank"><i class="footer__icon fa-brands fa-instagram"></i>Instagram</a></li>
-              <li class="footer__link"><a href="https://mobile.twitter.com/eewl_knits" class="footer__link-content" target="_blank"><i class="footer__icon fa-brands fa-twitter"></i>Twitter</a></li>
+              <!--<li class="footer__link"><a href="https://mobile.twitter.com/eewl_knits" class="footer__link-content" target="_blank"><i class="footer__icon fa-brands fa-twitter"></i>Twitter</a></li>-->
               <li class="footer__link"><a href="https://www.facebook.com/eewlknits" class="footer__link-content" target="_blank"><i class="footer__icon fa-brands fa-facebook-f"></i>Facebook</a></li>
-              <li class="footer__link"><a href="https://medium.com/@eewl" class="footer__link-content" target="_blank"><i class="footer__icon fa-brands fa-medium"></i>Medium</a></li>
-              <li class="footer__link"><a href="https://www.pinterest.com/eewl_knits/" class="footer__link-content" target="_blank"><i class="footer__icon fa-brands fa-pinterest"></i>Pinterest</a></li>
+              <!--<li class="footer__link"><a href="https://medium.com/@eewl" class="footer__link-content" target="_blank"><i class="footer__icon fa-brands fa-medium"></i>Medium</a></li>-->
+              <!--<li class="footer__link"><a href="https://www.pinterest.com/eewl_knits/" class="footer__link-content" target="_blank"><i class="footer__icon fa-brands fa-pinterest"></i>Pinterest</a></li>-->
+              <li class="footer__link"><a href="https://www.linkedin.com/company/eewlknits/" class="footer__link-content" target = "_blank"><i class="footer__icon fa-brands fa-linkedin"></i>LinkedIn</a></li>
             </ul>
           </nav>
           <div class="footer__boilerplate">
