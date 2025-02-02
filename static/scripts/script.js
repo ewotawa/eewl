@@ -1,5 +1,20 @@
 /* Use variables to define the images associated with the modal depending on image clicked. */
 
+const imgBennu = [
+  {
+    'path': '../static/images/bennu_01_wm.jpg',
+    'alt': 'The Bennu Bird was known as the ba spirit of the Ancient Egyptial sun god, Ra.',
+  },
+  {
+    'path': '../static/images/bennu_setup_00_wm.jpg',
+    'alt': 'The Bennu Bird was known as the ba spirit of the Ancient Egyptial sun god, Ra.',
+  },
+  {
+    'path': '../static/images/bennu_worn_01_wm.jpg',
+    'alt': 'The Bennu Bird was known as the ba spirit of the Ancient Egyptial sun god, Ra.',
+  }
+]
+
 const imgNefertiti = [
   {
     'path': '../static/images/nefertiti_00_wm.jpg',
@@ -224,6 +239,9 @@ function openModal() {
     populateDom(imgBarque)
   } else if (imgID == 'gallery__image_item_nefertiti') {
     populateDom(imgNefertiti)
+  } else if (imgID == 'gallery__image_item_bennu_bird') {
+    populateDom(imgBennu)
+  }
   } else {
     /* if there's nothing to open, close the modal window. */
     closeModal();
@@ -280,6 +298,9 @@ function openModal() {
     populateThumbnail(imgBarque)
   } else if (imgID == 'gallery__image_item_nefertiti') {
     populateThumbnail(imgNefertiti)
+  } else if (imgID == 'gallery__image_item_bennu_bird') {
+    populateThumbnail(imgBennu)
+  }
   } else {
     /* if there's nothing to open, close the modal window. */
     closeModal();
