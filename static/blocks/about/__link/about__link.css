@@ -2,9 +2,9 @@
   font-variant: small-caps;
   font-weight: bold;
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .about__link:hover {
-  color: hsl(0, 0%, 85%);
+  color: gray;
 }

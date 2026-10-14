@@ -1,7 +1,7 @@
 .page {
   /* typography */
   font-family: 'Cairo', sans-serif;
-  color: hsl(0, 0%, 85%);
+  color: hsl(0, 0%, 0%);
   font-size: 1.125em;
   /* get things to work on iOS */
   -webkit-overflow-scrolling: touch;

@@ -1,7 +1,7 @@
 .gallery__image {
-  max-width: 300px;
-  /* grid styling */
-  grid-area: container;
-  grid-area: 1/1;
-  place-self: center;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  width: 300px;
+  transition: transform 0.3s ease;
 }

@@ -1,0 +1,16 @@
+.gallery__container {
+  max-width: 300px;
+  margin: auto;
+  align-items: center;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+
+/* anything larger than 880px, use defaults */
+
+/* resolution more than 880px, fewer than 1024px */
+
+/* resolution more than 320px, fewer than 880px */
+
+/* resolution more than 320px, fewer than 880px */

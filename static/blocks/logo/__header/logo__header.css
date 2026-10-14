@@ -1,6 +1,8 @@
 .logo__header {
     color: white;
-    max-width: 550px;
+    max-width: 200px;
+    padding-top: 20px;
+    filter: drop-shadow(8px 8px);
 }
 
 /* ----- MEDIA QUERIES ----- */
